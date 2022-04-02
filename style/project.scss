@@ -1,0 +1,24 @@
+@import "variables.scss";
+
+.project{
+    &-item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 100px;
+        width: 100%;
+        .project-item-img{
+            width: 40%;
+        }
+        .project-item-text{
+            width: 40%;
+            .text{
+                font-size: 24px;
+                color: $dark-blue;
+                font-weight: 300;
+                width: 80%;
+                padding-bottom: 30px;
+            }
+        }
+    }
+}

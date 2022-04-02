@@ -1,0 +1,28 @@
+@import "variables.scss";
+
+.banner{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &-hello{
+        color: $green;
+        font-size: $fs-banner-md;
+        text-transform: uppercase;
+        font-weight: 500;
+        text-align: center;
+        .rafa{
+            color: $peach;
+        }
+    }
+    &-text{
+        font-size: $fs-banner-lg;
+        font-family: $ff-merri;
+        text-align: center;
+        color: $dark-blue;
+        font-weight: 400;
+        padding:  25px 0 50px 0; 
+    }
+}

@@ -1,3 +1,40 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+.title{
+    color: $green;
+    font-size: $fs-section-title;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 100px;
+}
+.subtitle{
+    color: $peach;
+    font-size: $fs-content-text-lg;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+.button{
+    width: 170px;
+    height: 55px;
+    background: $dark-blue;
+    color: $light-gray;
+    border-radius: 8px;
+    font-size: $fs-btn;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button-light{
+    width: 170px;
+    height: 55px;
+    background: $light-blue;
+    color: $light-gray;
+    border-radius: 8px;
+    font-size: $fs-btn;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
