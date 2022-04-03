@@ -5,13 +5,37 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
         margin-bottom: 100px;
         width: 100%;
-        .project-item-img{
-            width: 40%;
+        @media(max-width: 1250px){
+            flex-direction: column;
         }
-        .project-item-text{
+        .project-item-img-left{
+            flex: 0 0 500px;
             width: 40%;
+            padding-left: 70px;
+            @media(max-width: 1250px){
+                display: flex;
+                flex-direction: column;
+                align-self: center;
+                text-align: center;
+                padding-left: 0;
+                flex: 0 0 400px;
+            }
+        }
+        .project-item-text-right{
+            width: 40%;
+            padding-right: 70px;
+            flex: 0 0 500px;
+            @media(max-width: 1250px){
+                display: flex;
+                flex-direction: column;
+                align-self: center;
+                text-align: center;
+                padding-right: 0;
+                flex: 0 0 400px;
+            }
             .text{
                 font-size: 24px;
                 color: $dark-blue;
@@ -20,5 +44,52 @@
                 padding-bottom: 30px;
             }
         }
+    }
+    .project-item-letf{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 100px;
+        width: 100%;
+        @media(max-width: 1250px){
+            flex-direction: column-reverse;
+        } 
+        .project-item-img-right{
+            flex: 0 0 500px;
+            width: 40%;
+            padding-right: 70px;
+            @media(max-width: 1250px){
+                display: flex;
+                flex-direction: column;
+                align-self: center;
+                text-align: center;
+                padding-right   : 0;
+                flex: 0 0 400px;
+            }
+        }
+        .project-item-text-left{
+            width: 40%;
+            padding-left: 70px;
+            flex: 0 0 500px;
+            @media(max-width: 1250px){
+                display: flex;
+                flex-direction: column;
+                align-self: center;
+                text-align: center;
+                padding-left: 0;
+                flex: 0 0 400px;
+            }
+            .text{
+                font-size: 24px;
+                color: $dark-blue;
+                font-weight: 300;
+                width: 80%;
+                padding-bottom: 30px;
+            }
+        }
+    }
+    @media(max-width: 1250px){
+        margin-top: 400px;
     }
 }
