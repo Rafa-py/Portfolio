@@ -463,7 +463,7 @@ body {
 }
 
 .about {
-  height: calc(100vh);
+  padding-bottom: 40%;
 }
 .about .content {
   display: flex;
@@ -511,26 +511,6 @@ body {
 @media (max-width: 1200px) {
   .about .content {
     flex-direction: column;
-  }
-}
-@media (max-width: 1200px) {
-  .about {
-    height: calc(120vh);
-  }
-}
-@media (max-width: 500px) {
-  .about {
-    height: calc(130vh);
-  }
-}
-@media (max-width: 450px) {
-  .about {
-    height: calc(150vh);
-  }
-}
-@media (max-width: 320px) {
-  .about {
-    height: calc(160vh);
   }
 }
 

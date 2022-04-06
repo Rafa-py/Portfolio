@@ -1,7 +1,7 @@
 @import "../global/variables.scss";
 
 .about{
-    height: calc(100vh);
+    padding-bottom: 40%;
     .content{
         display: flex;
         justify-content: space-around;
@@ -41,18 +41,6 @@
         @media(max-width: 1200px){
             flex-direction: column;
         }
-    }
-    @media(max-width: 1200px){
-        height: calc(120vh);
-    }
-    @media(max-width: 500px){
-        height: calc(130vh);
-    }
-    @media(max-width: 450px){
-        height: calc(150vh);
-    }
-    @media(max-width: 320px){
-        height: calc(160vh);
     }
 }
 
