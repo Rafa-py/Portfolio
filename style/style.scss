@@ -1,6 +1,14 @@
-@import 'reset.scss';
-@import "header.scss";
-@import "banner.scss"; 
-@import "aboutMe.scss";
-@import "project.scss"; 
-@import "global.scss";
+// Global style
+@import 'global/reset.scss';
+@import "global/global.scss";
+
+//Componentes style
+@import 'components/button.scss';
+@import "components/fonts.scss";
+
+//Sections style
+@import "sections/header.scss";
+@import "sections/banner.scss";
+@import "sections/about.scss";
+@import "sections/projects.scss";
+

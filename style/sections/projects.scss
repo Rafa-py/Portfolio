@@ -1,0 +1,92 @@
+@import "../global/variables.scss";
+
+.projects{
+    width: 100%;
+    .title{
+        @media(max-width: 1200px){
+            padding-bottom: 20px;
+        }
+    }
+    .content{
+        .box{
+            display: flex;
+            justify-content: space-around;
+            padding: 0 50px 50px 50px;
+            align-items: center;
+            .img{
+                @media(max-width: 800px){
+                    width: 90%;
+                }
+            }
+            .text{
+                width: 35%;
+                .subtitle{
+                    @media(max-width: 1200px){
+                        text-align: center;
+                    }
+                }
+                .p-md{
+                    padding-bottom: 30px;
+                    @media(max-width: 1200px){
+                        text-align: center;
+                    }
+                }
+                @media(max-width: 1200px){
+                    margin-top: 50px;
+                    width: 50%;
+                }
+                @media(max-width: 950px){
+                    width: 65%;
+                }
+                @media(max-width: 800px){
+                    width: 80%;
+                }
+            }
+            @media(max-width: 1200px){
+                flex-direction: column;
+            }
+        }
+        .box-odd{
+            display: flex;
+            justify-content: space-around;
+            padding: 50px;
+            align-items: center;
+            .img{
+                @media(max-width: 800px){
+                    width: 90%;
+                }
+            }
+            .text{
+                width: 35%;
+                .subtitle{
+                    @media(max-width: 1200px){
+                        text-align: center;
+                    }
+                }
+                .p-md{
+                    padding-bottom: 30px;
+                    @media(max-width: 1200px){
+                        text-align: center;
+                    }
+                }
+                @media(max-width: 1200px){
+                    margin-top: 50px;
+                    width: 50%;
+                }
+                @media(max-width: 950px){
+                    width: 65%;
+                }
+                @media(max-width: 800px){
+                    width: 80%;
+                }
+            }
+            @media(max-width: 1200px){
+                flex-direction: column-reverse;
+            }
+        }
+    }
+    .see-all{
+        margin: 30px auto 30px;
+    }
+}
+

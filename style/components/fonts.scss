@@ -1,0 +1,39 @@
+@import "../global/variables.scss";
+
+.title{
+    color: $green;
+    font-size: $fs-section-title;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 100px;
+    @media(max-width: 700px){
+        font-size: 25px;
+    }
+}
+.subtitle{
+    color: $peach;
+    font-size: $fs-content-text-lg;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    @media(max-width: 700px){
+        font-size: 25px;
+    }
+}
+
+.p-lg{
+    color: $dark-blue;
+    font-size: 26px;
+    line-height: 1.2;
+}
+.p-md{
+    color: $dark-blue;
+    font-size: 24px;
+    font-weight: 300;
+}
+.p-sm{
+    color: $dark-blue;
+    font-size: 18px;
+    font-weight: 300;
+}
