@@ -2,6 +2,7 @@
 
 .projects{
     width: 100%;
+    padding-bottom: 15%;
     .title{
         @media(max-width: 1200px){
             padding-bottom: 20px;
@@ -13,9 +14,30 @@
             justify-content: space-around;
             padding: 0 50px 50px 50px;
             align-items: center;
-            .img{
-                @media(max-width: 800px){
-                    width: 90%;
+            .box-img{
+                position: relative;
+                .img{
+                    @media(max-width: 800px){
+                        width: 90%;
+                    }
+                }
+                .img-hover{
+                    opacity: 0;
+                    position: absolute;
+                    left: 0;
+                    transition: .3s ease-in-out;
+                    @media(max-width: 800px){
+                        width: 90%;
+                    }
+                }
+                .img-hover.hide{
+                    opacity: 1;
+                    position: absolute;
+                    left: 0;
+                    transition: .3s ease-in-out;
+                    @media(max-width: 800px){
+                        width: 90%;
+                    }
                 }
             }
             .text{
@@ -51,9 +73,30 @@
             justify-content: space-around;
             padding: 50px;
             align-items: center;
-            .img{
-                @media(max-width: 800px){
-                    width: 90%;
+            .box-img{
+                position: relative;
+                .img{
+                    @media(max-width: 800px){
+                        width: 90%;
+                    }
+                }
+                .img-hover{
+                    opacity: 0;
+                    position: absolute;
+                    left: 0;
+                    transition: .3s ease-in-out;
+                    @media(max-width: 800px){
+                        width: 90%;
+                    }
+                }
+                .img-hover.hide{
+                    opacity: 1;
+                    position: absolute;
+                    left: 0;
+                    transition: .3s ease-in-out;
+                    @media(max-width: 800px){
+                        width: 90%;
+                    }
                 }
             }
             .text{

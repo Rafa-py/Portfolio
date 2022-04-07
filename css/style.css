@@ -463,7 +463,7 @@ body {
 }
 
 .about {
-  padding-bottom: 40%;
+  padding-bottom: 15%;
 }
 .about .content {
   display: flex;
@@ -516,6 +516,7 @@ body {
 
 .projects {
   width: 100%;
+  padding-bottom: 15%;
 }
 @media (max-width: 1200px) {
   .projects .title {
@@ -528,8 +529,33 @@ body {
   padding: 0 50px 50px 50px;
   align-items: center;
 }
+.projects .content .box .box-img {
+  position: relative;
+}
 @media (max-width: 800px) {
-  .projects .content .box .img {
+  .projects .content .box .box-img .img {
+    width: 90%;
+  }
+}
+.projects .content .box .box-img .img-hover {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  transition: 0.3s ease-in-out;
+}
+@media (max-width: 800px) {
+  .projects .content .box .box-img .img-hover {
+    width: 90%;
+  }
+}
+.projects .content .box .box-img .img-hover.hide {
+  opacity: 1;
+  position: absolute;
+  left: 0;
+  transition: 0.3s ease-in-out;
+}
+@media (max-width: 800px) {
+  .projects .content .box .box-img .img-hover.hide {
     width: 90%;
   }
 }
@@ -576,8 +602,33 @@ body {
   padding: 50px;
   align-items: center;
 }
+.projects .content .box-odd .box-img {
+  position: relative;
+}
 @media (max-width: 800px) {
-  .projects .content .box-odd .img {
+  .projects .content .box-odd .box-img .img {
+    width: 90%;
+  }
+}
+.projects .content .box-odd .box-img .img-hover {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  transition: 0.3s ease-in-out;
+}
+@media (max-width: 800px) {
+  .projects .content .box-odd .box-img .img-hover {
+    width: 90%;
+  }
+}
+.projects .content .box-odd .box-img .img-hover.hide {
+  opacity: 1;
+  position: absolute;
+  left: 0;
+  transition: 0.3s ease-in-out;
+}
+@media (max-width: 800px) {
+  .projects .content .box-odd .box-img .img-hover.hide {
     width: 90%;
   }
 }
@@ -620,6 +671,24 @@ body {
 }
 .projects .see-all {
   margin: 30px auto 30px;
+}
+
+.knowledge {
+  padding-bottom: 15%;
+}
+.knowledge .content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.knowledge .content .squares {
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+}
+.knowledge .content .squares-img {
+  margin-right: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

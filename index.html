@@ -29,11 +29,11 @@
                     </li>
                 </ul>
             </nav>
-            <div class="menu-toggle">
+            <div class="menu-toggle" id="menu-toggle">
                 <div class="toggle"></div>
             </div>
         </div>
-        <div class="menu-mobile">
+        <div class="menu-mobile" id="menu-mobile">
             <ul class="menu-mobile-list">
                 <li class="menu-mobile-list-item">
                     <a href="" class="menu-mobile-list-item-link">Sobre Mim</a>
@@ -84,7 +84,10 @@
             </h2>
             <div class="content">
                 <div class="box">
-                    <img src="img/gerenciador.png" class="img" alt="">
+                    <div class="box-img">
+                        <img src="img/gerenciador.png" class="img" data-img alt="gerenciador">
+                        <img src="img/gerenciadorhover.png" class="img-hover" data-hover alt="gerenciador">
+                    </div>
                     <div class="text">
                         <h3 class="subtitle">Gerenciador de Usuários</h3>
                         <p class="p-md">Projeto criado para praticar o consumo de APIs e o padrão de projeto MCV.</p>
@@ -97,9 +100,47 @@
                         <p class="p-md">Projeto criado para praticar orientação a objetos e estrutura de dados básica.</p>
                         <button class="button-light">Ver mais</button>
                     </div>
-                    <img src="img/calc.png" class="img" alt="">
+                    <div class="box-img">
+                        <img src="img/calc.png" class="img" data-img alt="Calculadora">
+                        <img src="img/calchover.png" class="img-hover" data-hover alt="Calculadora">
+                    </div>
                 </div>
                 <button class="button see-all">Ver todos</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="knowledge">
+        <div class="container">
+            <h2 class="title">Conhecimentos</h2>
+            <div class="content">
+                <div class="text">
+                    <p class="p-sm">*passe o cursor do mouse no card para ler*
+                    </p>
+                </div>
+                <div class="squares">
+                    <div class="squares-img">
+                        <img src="img/html.png" alt="">
+                    </div>
+                    <div class="squares-img">
+                        <img src="img/Icon css.png" alt="">
+                    </div>
+                    <div class="squares-img">
+                        <img src="img/Js.png" alt="">
+                    </div>
+                    <div class="squares-img">
+                        <img src="img/Sass.png" alt="">
+                    </div>
+                    <div class="squares-img">
+                        <img src="img/react.png" alt="">
+                    </div>
+                    <div class="squares-img">
+                        <img src="img/Tailwind.png" alt="">
+                    </div>
+                    <div class="squares-img">
+                        <img src="img/wp.png" alt="">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
