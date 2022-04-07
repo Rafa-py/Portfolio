@@ -2,6 +2,7 @@ class Controller{
     constructor(){
         this.menuToggle();
         this.hoverImageProject();
+        this.hoverImageKnowledge();
     }
 
     menuToggle(){
@@ -28,9 +29,37 @@ class Controller{
                 item.classList.toggle("hide");
             });
         });
+    }
 
+    hoverImageKnowledge(){
+        let img = document.querySelectorAll("[data-hoverKnowledge]");
 
+        img.forEach((item)=>{
+            item.addEventListener("mouseover", ()=>{
+                item.classList.toggle("hide")
+                this.changeTextKnowledge(item)
+            })
+        })
+    
+        img.forEach((item)=>{
+            item.addEventListener("mouseout", ()=>{
+                item.classList.toggle("hide")
+                this.changeTextKnowledge(item)
+            })
+        })
+    }
 
+    changeTextKnowledge(item){
+        let img = Object.values(item.dataset)[0];
+        let msg = document.querySelector(".msg");
+        let texts = document.querySelectorAll("[data-textKnowledge]");
+        texts.forEach((text) =>{
+            let textValue = Object.values(text.dataset)[0];
+            if(img == textValue){
+                text.classList.toggle("show");
+                msg.classList.toggle("hide");
+            }
+        })
     }
 }
 

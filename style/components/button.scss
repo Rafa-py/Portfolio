@@ -12,6 +12,11 @@
     align-items: center;
     border: none;
     cursor: pointer;
+    @media(max-width: 800px){
+        width: 140px;
+        height: 40px;
+        font-size: 25px;
+    }
 }
 .button-light{
     width: 170px;
@@ -28,5 +33,10 @@
     @media(max-width: 1200px){
         align-self: center;
         margin: 0 auto;
+    }
+    @media(max-width: 800px){
+        width: 140px;
+        height: 40px;
+        font-size: 25px;
     }
 }
