@@ -721,19 +721,29 @@ body {
 }
 .knowledge .content .text .msg {
   opacity: 1;
+  transition: 0.2s ease-in-out;
 }
 .knowledge .content .text .msg.hide {
   opacity: 0;
+  transition: 0.2s ease-in-out;
 }
 .knowledge .content .text .description {
   position: absolute;
   top: 0;
   opacity: 0;
+  transition: 0.2s ease-in-out;
 }
 .knowledge .content .text .description.show {
   position: absolute;
   top: 0;
   opacity: 1;
+  transition: 0.2s ease-in-out;
+}
+@media (max-width: 600px) {
+  .knowledge .content .text {
+    width: 90%;
+    text-align: center;
+  }
 }
 .knowledge .content .squares {
   display: flex;
@@ -741,7 +751,7 @@ body {
   width: 500px;
 }
 .knowledge .content .squares-img {
-  margin: 0 20px 20px 0;
+  margin: 0 10px 20px 10px;
   position: relative;
 }
 .knowledge .content .squares-img .img-hover {
@@ -756,9 +766,16 @@ body {
   opacity: 1;
   transition: 0.2s ease-in-out;
 }
+@media (max-width: 600px) {
+  .knowledge .content .squares {
+    width: 90%;
+    justify-content: center;
+  }
+}
 @media (max-width: 950px) {
   .knowledge .content {
     flex-direction: column;
+    justify-content: center;
   }
 }
 
