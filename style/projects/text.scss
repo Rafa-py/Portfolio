@@ -1,0 +1,20 @@
+@import "../global/variables.scss";
+
+.text{
+    margin-top: 100px;
+    .content{
+        display: flex;
+        .title-project{
+            font-family: $ff-merri;
+            color: $dark-blue;
+            font-size: 50px;
+            font-weight: 300;
+            width: 50%;
+            margin-bottom: 200px;
+        }
+        .text-project{
+            width: 50%;
+            margin-bottom: 200px;
+        }
+    }
+}

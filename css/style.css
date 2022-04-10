@@ -134,12 +134,22 @@ table {
   border-spacing: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
 
 strong {
   color: #F37678;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .button {
@@ -217,6 +227,20 @@ strong {
   }
 }
 
+.inner-subtitle {
+  color: #48C5C9;
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-bottom: 60px;
+  text-align: center;
+}
+@media (max-width: 700px) {
+  .inner-subtitle {
+    font-size: 25px;
+  }
+}
+
 .p-lg {
   color: #001C4C;
   font-size: 26px;
@@ -226,6 +250,12 @@ strong {
 .p-md {
   color: #001C4C;
   font-size: 24px;
+  font-weight: 300;
+}
+
+.p-proj {
+  color: #001C4C;
+  font-size: 22px;
   font-weight: 300;
 }
 
@@ -243,12 +273,6 @@ strong {
 
 body {
   background: #F7F7F7;
-}
-
-.container {
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
 }
 
 .header {
@@ -698,7 +722,7 @@ body {
   }
 }
 .projects .see-all {
-  margin: 30px auto 30px;
+  margin: 30px auto 0;
 }
 
 .knowledge {
@@ -804,6 +828,49 @@ body {
     margin-top: 50px;
     height: 70px;
   }
+}
+
+.overview {
+  display: flex;
+}
+.overview .img {
+  width: 55%;
+}
+.overview .img .img-project {
+  width: 670px;
+  height: 600px;
+  border-radius: 8px;
+}
+.overview .img .buttons {
+  display: flex;
+  width: 85%;
+  justify-content: space-between;
+  margin: 25px 0 25px 0;
+}
+.overview .img .buttons .img-btn {
+  margin-left: 13px;
+}
+.overview .text-overview {
+  width: 45%;
+}
+
+.text {
+  margin-top: 100px;
+}
+.text .content {
+  display: flex;
+}
+.text .content .title-project {
+  font-family: "Merriweather", serif;
+  color: #001C4C;
+  font-size: 50px;
+  font-weight: 300;
+  width: 50%;
+  margin-bottom: 200px;
+}
+.text .content .text-project {
+  width: 50%;
+  margin-bottom: 200px;
 }
 
 /*# sourceMappingURL=style.css.map */

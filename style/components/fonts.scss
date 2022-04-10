@@ -21,6 +21,17 @@
         font-size: 25px;
     }
 }
+.inner-subtitle{
+    color: $green;
+    font-size: $fs-content-text-lg;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-bottom: 60px;
+    text-align: center;
+    @media(max-width: 700px){
+        font-size: 25px;
+    }
+}
 
 .p-lg{
     color: $dark-blue;
@@ -30,6 +41,11 @@
 .p-md{
     color: $dark-blue;
     font-size: 24px;
+    font-weight: 300;
+}
+.p-proj{
+    color: $dark-blue;
+    font-size: 22px;
     font-weight: 300;
 }
 .p-sm{

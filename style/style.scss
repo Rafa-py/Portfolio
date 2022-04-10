@@ -1,17 +1,24 @@
 // Global style
 @import 'global/reset.scss';
 @import "global/global.scss";
+@import "global/container.scss";
 
 //Componentes style
 @import 'components/button.scss';
 @import "components/fonts.scss";
 @import "components/img.scss";
 
-//Sections style
-@import "sections/header.scss";
-@import "sections/banner.scss";
-@import "sections/about.scss";
-@import "sections/projects.scss";
-@import "sections/knowledge.scss";
-@import "sections/footer.scss";
+//Home page style
+@import "home/header.scss";
+@import "home/banner.scss";
+@import "home/about.scss";
+@import "home/projects.scss";
+@import "home/knowledge.scss";
+@import "home/footer.scss";
+
+//
+
+//Inner projects page style
+@import "projects/overview.scss";
+@import "projects/text.scss";
 

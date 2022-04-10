@@ -13,19 +13,20 @@
         rel="stylesheet">
     <title>Rafa Dev</title>
 </head>
+<body>
     <header class="header">
         <div class="container">
             <h1 class="logo">Rafa</h1>
             <nav class="menu">
                 <ul class="list">
                     <li class="list_item">
-                        <a href="" class="list_item_link">Sobre Mim</a>
+                        <a href="#1" class="list_item_link">Sobre Mim</a>
                     </li>
                     <li class="list_item">
-                        <a href="" class="list_item_link">Projetos</a>
+                        <a href="#2" class="list_item_link">Projetos</a>
                     </li>
                     <li class="list_item">
-                        <a href="" class="list_item_link">Conhecimentos</a>
+                        <a href="#3" class="list_item_link">Conhecimentos</a>
                     </li>
                 </ul>
             </nav>
@@ -36,13 +37,13 @@
         <div class="menu-mobile" id="menu-mobile">
             <ul class="menu-mobile-list">
                 <li class="menu-mobile-list-item">
-                    <a href="" class="menu-mobile-list-item-link">Sobre Mim</a>
+                    <a href="#1" class="menu-mobile-list-item-link">Sobre Mim</a>
                 </li>
                 <li class="menu-mobile-list-item">
-                    <a href="" class="menu-mobile-list-item-link">Projetos</a>
+                    <a href="#2" class="menu-mobile-list-item-link">Projetos</a>
                 </li>
                 <li class="menu-mobile-list-item">
-                    <a href="" class="menu-mobile-list-item-link">Conhecimentos</a>
+                    <a href="#3" class="menu-mobile-list-item-link">Conhecimentos</a>
                 </li>
             </ul>
         </div>
@@ -59,13 +60,13 @@
 
     <section class="about">
         <div class="container">
-            <h2 class="title">Sobre Mim</h2>
+            <a id="1"><h2 class="title">Sobre Mim</h2></a>
             <div class="content">
                 <div class="box-photo">
                     <img src="img/profile.png" class="img" alt="">
                     <div class="btn">
-                        <button class="button">Linkedin</button>
-                        <button class="button-light">Currículo</button>
+                        <a href="https://www.linkedin.com/in/rafael-silva-pinto-a4a18a15b"><button class="button">Linkedin</button></a>
+                        <a href="files/arquivo-teste.pdf"><button class="button-light">Currículo</button></a>
                     </div>
                 </div>
                 <div class="box-text">
@@ -79,9 +80,9 @@
 
     <section class="projects">
         <div class="container">
-            <h2 class="title">
+            <a id="2"><h2 class="title">
                 Projetos
-            </h2>
+            </h2></a>
             <div class="content">
                 <div class="box">
                     <div class="box-img">
@@ -91,28 +92,30 @@
                     <div class="text">
                         <h3 class="subtitle">Gerenciador de Usuários</h3>
                         <p class="p-md">Projeto criado para praticar o consumo de APIs e o padrão de projeto MCV.</p>
-                        <button class="button-light">Ver mais</button>
+                        <a href="%20inner-pages/gerenciador.html"><button class="button-light">Ver mais</button></a>
                     </div>
                 </div>
                 <div class="box-odd">
                     <div class="text">
                         <h3 class="subtitle">Calculadora</h3>
                         <p class="p-md">Projeto criado para praticar orientação a objetos e estrutura de dados básica.</p>
-                        <button class="button-light">Ver mais</button>
+                        <a href="%20inner-pages/calculadora.html"><button class="button-light">Ver mais</button></a>
                     </div>
                     <div class="box-img">
                         <img src="img/calc.png" class="img" data-img alt="Calculadora">
                         <img src="img/calchover.png" class="img-hover" data-hover alt="Calculadora">
                     </div>
                 </div>
-                <button class="button see-all">Ver todos</button>
+                <a href="%20inner-pages/all-projects.html">
+                    <button  class="button see-all">Ver todos</button>
+                </a>
             </div>
         </div>
     </section>
 
     <section class="knowledge">
         <div class="container">
-            <h2 class="title">Conhecimentos</h2>
+            <a id="3"><h2 class="title">Conhecimentos</h2></a>
             <div class="content">
                 <div class="text">
                     <p class="p-sm msg">*passe o cursor do mouse no card para ler*
@@ -178,8 +181,6 @@
             </ul>
         </div>
     </footer>
-
-<body>
     <script src="scripts/index.js"></script>
 </body>
 
