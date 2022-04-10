@@ -779,4 +779,31 @@ body {
   }
 }
 
+.footer .content-list {
+  display: flex;
+  width: 100%;
+  height: 120px;
+  justify-content: space-between;
+}
+.footer .content-list-item {
+  display: flex;
+  align-items: center;
+}
+.footer .content-list-item img {
+  padding-right: 8px;
+}
+@media (max-width: 400px) {
+  .footer .content-list-item {
+    font-size: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .footer .content-list {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    height: 70px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
